@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAI,cAAc,CAAC,OAAO,CAAC,MAAM,CAAC,IAAI,IAAI,EACtC,cAAc,CAAC,OAAO,CAAC,MAAM,EAAE,OAAO,CAAC,CAAC","sources":["index.js"],"sourcesContent":["if (sessionStorage.getItem(\"data\") == null) {\r\n    sessionStorage.setItem(\"data\", dataStr);\r\n}\r\n\r\n"],"names":[],"version":3,"file":"index.c36f364e.js.map","sourceRoot":"/__parcel_source_root/"}

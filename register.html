@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HBMS - Register</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="data.js"></script>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+    <script src="clock.js"></script>
+    <script src="queue.js"></script>
+</head>
+
+<body onload="clockInit(); loopQueue();">
+    <div id="main-container">
+        <header id="header">
+            <div class="row">
+                <div class="column">
+                    <h2><a class="menu-left" href="/index.html">Main</a></h2>
+                </div>
+                <div class="column" class="menu-center">
+                    <h2>Register</h2>
+                </div>
+                <div class="column clock" id="clock">
+                    <h2 id="clockText"></h2>
+                </div>
+            </div>
+        </header>
+
+        <section id="main-body-container">
+            <form name="registerForm" onsubmit="return submitForm()">
+                <div class="grid-container">
+                    <div class="grid-item">Name</div>
+                    <div class="grid-item"><input class="grid-input" type="text" id="name" name="name"
+                            placeholder="Enter Name :">
+                    </div>
+                    <div class="grid-item">Age</div>
+                    <div class="grid-item"><input class="grid-input" type="number" id="age" name="age"
+                            placeholder="Enter Age:">
+                    </div>
+                    <!-- <div class="grid-item">B.Date</div>
+                    <div class="grid-item"><input class="grid-input" type="date" id="dob" name="dob"></div> -->
+                    <div class="grid-item">Check In</div>
+                    <div class="grid-item"><input class="grid-input" type="date" id="checkInDate" name="checkInDate">
+                    </div>
+                    <div class="grid-item">Check Out</div>
+                    <div class="grid-item"><input class="grid-input" type="date" id="checkOutDate" name="checkOutDate">
+                    </div>
+                    <div class="grid-item">Ward</div>
+                    <div class="grid-item"><input class="grid-input" list="wards" name="ward" id="ward"
+                            placeholder="Select a ward">
+                        <datalist id="wards">
+                            <option value="General">
+                            <option value="Intensive Care">
+                            <option value="Infectious Disease">
+                        </datalist>
+                    </div>
+                    <div class="grid-item">Doctor</div>
+                    <div class="grid-item"><input class="grid-input" list="doctors" name="doctor" id="doctor"
+                            placeholder="Select a doctor">
+                        <datalist id="doctors">
+                            <option value="Dr. Koh Chin Wei">
+                            <option value="Dr. Christopher">
+                            <option value="Dr. Ganesh">
+                        </datalist>
+                    </div>
+                    <div class="grid-item">Remark</div>
+                    <div class="grid-item"><input class="grid-input" list="statuses" name="status" id="status"
+                            placeholder="Select a status">
+                        <datalist id="statuses">
+                            <option value="Pending Checking">
+                            <option value="Recovering">
+                            <option value="Pending For Operation">
+                            <option value="Pending Result">
+                            <option value="Checked Out">
+                        </datalist>
+                    </div>
+                </div>
+                <div>
+                    <input class="submitBtn" type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+
+        <footer id="footer">
+            <h3>Copyright © Ong Bin Long - Hospital Bed Management System</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

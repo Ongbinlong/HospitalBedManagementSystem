@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+#main-container {
+    width: 100%;
+    margin: 0px auto;
+}
+
+#header {
+    width: 100%;
+    background-color: rgb(51, 51, 255);
+    color: white;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#header:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#header section {
+    float: left;
+    width: 20%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#header nav {
+    width: 50%;
+    float: left;
+}
+
+#header nav ul {
+    list-style: none;
+}
+
+#header nav ul li {
+    float: left;
+    min-width: 10%;
+    padding: 4px;
+    margin-left: 10px;
+    background-color: #fdf1e5;
+    text-align: center;
+    color: black;
+}
+
+#header nav ul li a,
+a {
+    text-decoration: none;
+}
+
+#main-body-container {
+    padding: 2% 20% 1%;
+    background-color: rgba(31, 77, 176, 0.792);
+    /* margin: 10px; */
+}
+
+#main-body-container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#footer {
+    width: 100%;
+    background-color: rgb(51, 51, 255);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.center {
+    width: 50%;
+    margin-left: 24.9%;
+}
+
+.text-right {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.clock {
+    text-align: right;
+}
+
+.grid-input {
+    font-size: 1em;
+    float: left;
+}
+
+.menu-left {
+    margin-left: 5em;
+}
+
+.menu-center {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(51, 51, 255);
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+.submitBtn {
+    background-color:blue;
+    width: 100%;
+    margin-top:5px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}

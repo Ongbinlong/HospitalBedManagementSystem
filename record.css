@@ -1,0 +1,141 @@
+.table-wrapper {
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.bedTable {
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.bedTable td,
+.bedTable th {
+    text-align: center;
+    padding: 8px;
+}
+
+.bedTable td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 18px;
+}
+
+.bedTable th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.bedTable th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.bedTable tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .bedTable {
+        display: block;
+        width: 100%;
+    }
+
+    .table-wrapper:before {
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 18px;
+        color: white;
+        padding: 0 0 10px;
+    }
+
+    .bedTable,
+    .bedTable,
+    .bedTable th {
+        display: block;
+    }
+
+    .bedTable th:last-child {
+        border-bottom: none;
+    }
+
+    .bedTable {
+        float: left;
+    }
+
+    .bedTable {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+
+    .bedTable td,
+    .bedTable th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 18px;
+        text-overflow: ellipsis;
+    }
+
+    .bedTable th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+
+    .bedTable tr {
+        display: table-cell;
+    }
+
+    .bedTable tr:nth-child(odd) {
+        background: none;
+    }
+
+    .bedTable tr:nth-child(even) {
+        background: transparent;
+    }
+
+    .bedTable tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+
+    .bedTable tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+
+    .bedTable td {
+        display: block;
+        text-align: center;
+    }
+}
+
+.wardTitle {
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+.generalTitle {
+    background-color: gray;
+}
+
+.intensiveTitle {
+    background-color: red;
+}
+
+.infectiousTitle {
+    background-color: orange;
+}

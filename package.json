@@ -1,0 +1,22 @@
+{
+  "name": "hbms",
+  "version": "1.0.0",
+  "description": "Hospital Bed Management System - Bin Long",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm i parcel & npm run open",
+    "open": "parcel index.html --port 8000"
+  },
+  "author": "Ong Bin Long",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "express": "^4.18.2",
+    "html-js-css": "^1.0.4",
+    "http-server": "^14.1.1",
+    "mongoose": "^6.6.7",
+    "nodemon": "^2.0.20",
+    "parcel": "^2.7.0"
+  }
+}

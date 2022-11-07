@@ -1,0 +1,129 @@
+.table-wrapper {
+  margin: 10px 70px 70px;
+  box-shadow: 0 35px 50px #0003;
+}
+
+.bedTable {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.bedTable td, .bedTable th {
+  text-align: center;
+  padding: 8px;
+}
+
+.bedTable td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 18px;
+}
+
+.bedTable th {
+  color: #fff;
+  background: #4fc3a1;
+}
+
+.bedTable th:nth-child(2n+1) {
+  color: #fff;
+  background: #324960;
+}
+
+.bedTable tr:nth-child(2n) {
+  background: #f8f8f8;
+}
+
+@media (max-width: 767px) {
+  .bedTable {
+    width: 100%;
+    display: block;
+  }
+
+  .table-wrapper:before {
+    content: "Scroll horizontally >";
+    text-align: right;
+    color: #fff;
+    padding: 0 0 10px;
+    font-size: 18px;
+    display: block;
+  }
+
+  .bedTable, .bedTable, .bedTable th {
+    display: block;
+  }
+
+  .bedTable th:last-child {
+    border-bottom: none;
+  }
+
+  .bedTable {
+    float: left;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+
+  .bedTable td, .bedTable th {
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 120px;
+    text-overflow: ellipsis;
+    padding: 20px .625em .625em;
+    font-size: 18px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .bedTable th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+
+  .bedTable tr {
+    display: table-cell;
+  }
+
+  .bedTable tr:nth-child(2n+1), .bedTable tr:nth-child(2n) {
+    background: none;
+  }
+
+  .bedTable tr td:nth-child(2n+1) {
+    background: #f8f8f8;
+    border-right: 1px solid #e6e4e4;
+  }
+
+  .bedTable tr td:nth-child(2n) {
+    border-right: 1px solid #e6e4e4;
+  }
+
+  .bedTable td {
+    text-align: center;
+    display: block;
+  }
+}
+
+.wardTitle {
+  font-weight: bold;
+  font-size: 24px !important;
+}
+
+.generalTitle {
+  background-color: gray;
+}
+
+.intensiveTitle {
+  background-color: red;
+}
+
+.infectiousTitle {
+  background-color: orange;
+}
+
+/*# sourceMappingURL=reminder.d94f939b.css.map */

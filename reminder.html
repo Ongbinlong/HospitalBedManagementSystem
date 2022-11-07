@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HBMS - Reminder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="reminder.css">
+    <script type="text/javascript" src="data.js"></script>
+    <script src="reminder.js"></script>
+    <script src="clock.js"></script>
+    <script src="queue.js"></script>
+
+</head>
+
+<body onload="clockInit(); initFetchJSONFile(); loopQueue();">
+    <div id="main-container">
+        <header id="header">
+            <div class="row">
+                <div class="column"><h2><a class="menu-left" href="/index.html">Main</a></h2></div>
+                <div class="column" class="menu-center"><h2>TODAY : Check Out</h2></div>
+                <div class="column clock" id="clock"><h2 id="clockText"></h2></div>
+            </div>
+        </header>
+
+        <section id="main-body-container">
+            <div id="bedTable">
+            </div>
+        </section>
+
+        <footer id="footer">
+            <h3>Copyright © Ong Bin Long - Hospital Bed Management System</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

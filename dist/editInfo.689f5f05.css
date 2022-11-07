@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  color: #fff;
+  background-color: #33f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+
+#header:after {
+  content: ".";
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+
+#header section {
+  float: left;
+  width: 20%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#header nav {
+  width: 50%;
+  float: left;
+}
+
+#header nav ul {
+  list-style: none;
+}
+
+#header nav ul li {
+  float: left;
+  min-width: 10%;
+  text-align: center;
+  color: #000;
+  background-color: #fdf1e5;
+  margin-left: 10px;
+  padding: 4px;
+}
+
+#header nav ul li a, a {
+  text-decoration: none;
+}
+
+#main-body-container {
+  background-color: #1f4db0ca;
+  padding: 2% 20% 1%;
+}
+
+#main-body-container:after {
+  content: ".";
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+
+#footer {
+  width: 100%;
+  color: #fff;
+  background-color: #33f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.center {
+  width: 50%;
+  margin-left: 24.9%;
+}
+
+.text-right {
+  text-align: left;
+  text-align: right;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.clock {
+  text-align: right;
+}
+
+.grid-input {
+  float: left;
+  font-size: 1em;
+}
+
+.menu-left {
+  margin-left: 5em;
+}
+
+.menu-center {
+  text-align: center;
+}
+
+.grid-container {
+  background-color: #33f;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  display: grid;
+}
+
+.grid-item {
+  text-align: center;
+  background-color: #fffc;
+  border: 1px solid #000c;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.submitBtn {
+  width: 100%;
+  color: #fff;
+  background-color: #00f;
+  margin-top: 5px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=editInfo.689f5f05.css.map */

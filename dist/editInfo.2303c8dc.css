@@ -1,0 +1,26 @@
+.grid-container {
+  background-color: #33f;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  display: grid;
+}
+
+.grid-item {
+  text-align: center;
+  background-color: #fffc;
+  border: 1px solid #000c;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.submitBtn {
+  width: 100%;
+  color: #fff;
+  background-color: #00f;
+  margin-top: 5px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=editInfo.2303c8dc.css.map */
